@@ -1,0 +1,130 @@
+# fullsend organization configuration
+# https://github.com/fullsend-ai/fullsend
+#
+# This file is managed by fullsend. Manual edits may be overwritten.
+version: "1"
+dispatch:
+    platform: github-actions
+    mode: oidc-mint
+inference:
+    provider: vertex
+defaults:
+    roles:
+        - fullsend
+        - triage
+        - coder
+        - review
+        - retro
+        - prioritize
+    max_implementation_retries: 2
+    auto_merge: false
+agents:
+    - role: fullsend
+      name: ""
+      slug: ""
+    - role: triage
+      name: ""
+      slug: ""
+    - role: coder
+      name: ""
+      slug: ""
+    - role: review
+      name: ""
+      slug: ""
+    - role: retro
+      name: ""
+      slug: ""
+    - role: prioritize
+      name: ""
+      slug: ""
+repos:
+    ai-sample-chatbot-dance:
+        enabled: false
+    api-manager:
+        enabled: false
+    application-service:
+        enabled: false
+    appstudio-build-setup:
+        enabled: false
+    clone-controller:
+        enabled: false
+    dance-bootstrap-app:
+        enabled: false
+    docs:
+        enabled: false
+    dora-metrics:
+        enabled: false
+    ec-cookbook:
+        enabled: false
+    gbenhaim-test-repo:
+        enabled: false
+    gitops-repository-template:
+        enabled: false
+    helmet:
+        enabled: false
+    infra-common-deployments:
+        enabled: false
+    infra-deployments:
+        enabled: false
+    infrastructure:
+        enabled: false
+    jvm-build-data:
+        enabled: false
+    jvm-build-service-builder-images:
+        enabled: false
+    kargo-test:
+        enabled: false
+    managed-gitops:
+        enabled: false
+    o11y:
+        enabled: false
+    operator-toolkit-example:
+        enabled: false
+    performance-toolkit:
+        enabled: false
+    release-review-rot:
+        enabled: false
+    results-service:
+        enabled: false
+    rh-internal-pipeline-bundle:
+        enabled: false
+    rh-syft:
+        enabled: false
+    rhads-services-gitops:
+        enabled: false
+    rhtap-e2e:
+        enabled: false
+    rhtap-utils:
+        enabled: false
+    service-provider-integration:
+        enabled: false
+    shared-utils:
+        enabled: false
+    tsf-cli:
+        enabled: false
+    tsf-conforma-data:
+        enabled: false
+    tssc-backstage-plugins:
+        enabled: false
+    tssc-cli:
+        enabled: false
+    tssc-dev-gitops:
+        enabled: false
+    tssc-dev-gitops-jenkins:
+        enabled: false
+    tssc-dev-multi-ci:
+        enabled: false
+    tssc-dev-source-jenkins:
+        enabled: false
+    tssc-sample-pipelines:
+        enabled: false
+    tssc-sample-sbom-scans:
+        enabled: false
+    tssc-sample-templates:
+        enabled: false
+    tssc-test:
+        enabled: false
+    workload-cluster-templates:
+        enabled: false
+    workspace-resource-controller:
+        enabled: false
