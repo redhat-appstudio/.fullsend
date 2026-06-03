@@ -18,25 +18,7 @@ defaults:
         - prioritize
     max_implementation_retries: 2
     auto_merge: false
-agents:
-    - role: fullsend
-      name: ""
-      slug: ""
-    - role: triage
-      name: ""
-      slug: ""
-    - role: coder
-      name: ""
-      slug: ""
-    - role: review
-      name: ""
-      slug: ""
-    - role: retro
-      name: ""
-      slug: ""
-    - role: prioritize
-      name: ""
-      slug: ""
+agents: []
 repos:
     .fullsend:
         enabled: false
