@@ -38,6 +38,8 @@ agents:
       name: ""
       slug: ""
 repos:
+    .fullsend:
+        enabled: false
     ai-sample-chatbot-dance:
         enabled: false
     api-manager:
