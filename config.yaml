@@ -80,7 +80,7 @@ repos:
     managed-gitops:
         enabled: false
     o11y:
-        enabled: false
+        enabled: true
     operator-toolkit-example:
         enabled: false
     performance-toolkit:
