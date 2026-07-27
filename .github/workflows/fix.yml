@@ -1,3 +1,6 @@
+# This file is managed by fullsend. Do not edit it directly.
+# Upstream: https://github.com/fullsend-ai/fullsend/blob/main/internal/scaffold/fullsend-repo/.github/workflows/fix.yml
+---
 # fullsend-stage: fix
 # lint-workflow-size: max-lines=310
 name: Fix
@@ -25,7 +28,7 @@ on:
       trigger_source:
         required: true
         type: string
-        description: 'GitHub username that triggered the fix; bot accounts end with [bot]'
+        description: "GitHub username that triggered the fix; bot accounts end with [bot]"
       pr_number:
         required: false
         type: string
@@ -49,7 +52,7 @@ concurrency:
 
 jobs:
   fix:
-    uses: fullsend-ai/fullsend/.github/workflows/reusable-fix.yml@v0
+    uses: fullsend-ai/fullsend/.github/workflows/reusable-fix.yml@3cfa255ab4cc8190670585ea42da529119251632 # v0.32.0
     with:
       event_type: ${{ inputs.event_type }}
       source_repo: ${{ inputs.source_repo }}
@@ -59,6 +62,8 @@ jobs:
       instruction: ${{ inputs.instruction || '' }}
       mint_url: ${{ vars.FULLSEND_MINT_URL }}
       gcp_region: ${{ vars.FULLSEND_GCP_REGION }}
+      install_mode: per-org
+      runner_image: ubuntu-24.04
     secrets:
       FULLSEND_GCP_WIF_PROVIDER: ${{ secrets.FULLSEND_GCP_WIF_PROVIDER }}
       FULLSEND_GCP_PROJECT_ID: ${{ secrets.FULLSEND_GCP_PROJECT_ID }}
