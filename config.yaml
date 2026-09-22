@@ -36,8 +36,6 @@ repos:
         enabled: false
     docs:
         enabled: false
-    dora-metrics:
-        enabled: true
     ec-cookbook:
         enabled: false
     gbenhaim-test-repo:
@@ -60,8 +58,6 @@ repos:
         enabled: false
     managed-gitops:
         enabled: false
-    o11y:
-        enabled: true
     operator-toolkit-example:
         enabled: false
     performance-toolkit:
